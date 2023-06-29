@@ -1,8 +1,11 @@
 library(readxl)
 library(rgdal)
+library(spgwr)
+library(GWmodel)
 
 # Prepare Dataset
 df <- read_excel("kesehatan balita di jawa barat 2021.xlsx")
+head(df)
 
 X1 <- df$luas_wilayah
 X2 <- df$presentase_wilayah
